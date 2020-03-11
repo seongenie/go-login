@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/drone/go-login/login"
-	"github.com/drone/go-login/login/internal/oauth2"
-	"github.com/drone/go-login/login/logger"
+	"github.com/seongenie/go-login/login"
+	"github.com/seongenie/go-login/login/internal/oauth2"
+	"github.com/seongenie/go-login/login/logger"
 )
 
 var _ login.Middleware = (*Config)(nil)
