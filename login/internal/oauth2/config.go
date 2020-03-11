@@ -109,6 +109,7 @@ func (c *Config) exchange(code, state string) (*token, error) {
 	}
 	req.Header.Set("Accept", "application/json")
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
+	req.Header.Set("Cookie", "dotcom_user=seongenie")
 
 	if !c.BasicAuthOff {
 		req.SetBasicAuth(c.ClientID, c.ClientSecret)
